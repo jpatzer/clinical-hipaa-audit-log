@@ -1,16 +1,3 @@
-Router.map(function() {
-  this.route("hipaaLogRoute", {
-    path: "/audit",
-    template: "hipaaLogPage",
-    waitOn: function() {
-      return [
-        Meteor.subscribe('hipaa'),
-      ];
-    },
-  });
-});
-
-
 Template.hipaaLogPage.helpers({
   hipaaAudit: function () {
     return Hipaa.find({},{sort:{timestamp: -1}});
