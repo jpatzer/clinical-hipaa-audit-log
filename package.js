@@ -1,21 +1,23 @@
 Package.describe({
-  summary: "HIPAA audit log for ClinicalFramework. Forked from clinical:hipaa-audit-log. Updated packages for compatibility and altered some of the implementation.",
-  version: "1.0.1",
+  summary: "HIPAA audit log.",
+  version: "1.0.2",
   git: "https://github.com/jpatzer/clinical-hipaa-audit-log",
   name: "jeffpatzer:hipaa-audit-log"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom('METEOR@1.0');
+
   api.export('HipaaLogger');
   api.export('Hipaa');
 
-  api.use('meteor-platform', ['client','server']);
-  api.use('iron:router', 'client');
-  api.use('nemo64:bootstrap', 'client');
-  api.use('mrt:momentjs', 'client');
+  // api.use('meteor-platform', ['client','server']);
+  api.use('iron:router@1.0.0', 'client');
+  api.use('nemo64:bootstrap@3.3.0', 'client');
+  api.use('mrt:momentjs@2.0.0', 'client');
   api.use('less', 'client');
-  api.use('fortawesome:fontawesome', 'client');
-  api.use('alanning:roles', ['client','server']);
+  api.use('fortawesome:fontawesome@4.0.0', 'client');
+  api.use('alanning:roles@1.0.0', ['client','server']);
 
   api.addFiles('hipaa.audit.html', "client");
 

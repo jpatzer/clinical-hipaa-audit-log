@@ -1,4 +1,4 @@
-clinical-ui-hipaa-log
+Hippa Audit Log
 ====================================================
 
 HIPAA logging and audit features for Meteor Apps.
