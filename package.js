@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "HIPAA audit log for ClinicalFramework.",
+  summary: "HIPAA audit log for ClinicalFramework. Forked from clinical:hipaa-audit-log. Updated packages for compatibility and altered some of the implementation.",
   version: "1.0.1",
-  git: "http://github.com/awatson1978/clinical-hipaa-audit-log.git",
-  name: "clinical:hipaa-audit-log"
+  git: "https://github.com/jpatzer/clinical-hipaa-audit-log",
+  name: "jeffpatzer:hipaa-audit-log"
 });
 
 Package.on_use(function (api) {
