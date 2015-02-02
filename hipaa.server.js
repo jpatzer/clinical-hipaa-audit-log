@@ -8,7 +8,6 @@ Meteor.publish('hipaa', function () {
 
 Meteor.startup(function () {
 
-  console.log('Meteor.startup...');
   if (Hipaa.find().count() === 0) {
     console.log('No events in hipaa audit log!  Initializing audit log...');
 
