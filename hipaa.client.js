@@ -1,11 +1,12 @@
-//Hipaa =  new Meteor.Collection("hipaa");
-
-Meteor.subscribe('hipaa');
-
 Router.map(function() {
   this.route("hipaaLogRoute", {
     path: "/audit",
-    template: "hipaaLogPage"
+    template: "hipaaLogPage",
+    waitOn: function() {
+      return [
+        Meteor.subscribe('hipaa'),
+      ];
+    },
   });
 });
 
