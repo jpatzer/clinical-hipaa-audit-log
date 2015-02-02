@@ -11,7 +11,7 @@ Package.on_use(function (api) {
   api.export('HipaaLogger');
   api.export('Hipaa');
 
-  // api.use('meteor-platform', ['client','server']);
+  api.use('meteor-platform', ['client','server']);
   api.use('iron:router@1.0.0', 'client');
   api.use('nemo64:bootstrap@3.3.0', 'client');
   api.use('mrt:momentjs@2.0.0', 'client');
