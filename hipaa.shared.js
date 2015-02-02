@@ -1,7 +1,7 @@
 Hipaa =  new Meteor.Collection("hipaa");
 Hipaa.allow({
   insert: function(){
-    return true;
+    return false;
   },
   update: function () {
     return false;
