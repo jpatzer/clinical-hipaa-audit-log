@@ -13,10 +13,9 @@ Package.on_use(function (api) {
   api.use('iron:router', 'client');
   api.use('nemo64:bootstrap', 'client');
   api.use('mrt:momentjs', 'client');
-  api.use('less', 'client')
-  api.use('fortawesome:fontawesome', 'client')
-
-  //api.use('clinical-ui-syntax', 'client')
+  api.use('less', 'client');
+  api.use('fortawesome:fontawesome', 'client');
+  api.use('alanning:roles', ['client','server']);
 
   api.addFiles('hipaa.audit.html', "client");
 
